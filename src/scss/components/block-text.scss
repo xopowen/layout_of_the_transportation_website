@@ -1,0 +1,27 @@
+.block-text {
+  display: flex;
+  row-gap: 51px;
+  flex-direction: column;
+  @include media-phones480max{
+    row-gap: 20px;
+  }
+  // .section-text__text-area
+  button{
+    margin-top: 50px;
+  }
+  &__head{
+
+    margin-top:25px ;
+    margin-bottom: 32px;
+    letter-spacing: -0.5px;
+    &_mini{
+      margin-top:10px ;
+    }
+  }
+  p{
+    padding-right: 10%;
+  }
+  p+p{
+    margin-top: 15px;
+  }
+}

@@ -1,0 +1,38 @@
+@import "where-we-work";
+
+.main-number {
+  // .main-number__header
+  &__header {
+  }
+
+  // .main-number__body
+  &__body {
+    margin-top: 74px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20%,150px));
+    row-gap: 10px;
+    justify-content: space-between;
+  }
+
+  // .main-number__mark
+  &__mark {
+
+  }
+}
+
+.mark {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+  justify-content: space-between;
+  // .mark_p
+
+  &_p {
+    margin-top: 25px ;
+  }
+
+  // .mark__head
+  &__head {
+
+  }
+}

@@ -1,0 +1,44 @@
+
+
+.protect-drivel {
+  // .protect-drivel__body
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  // .protect-drivel__card
+  &__card {
+  }
+}
+
+
+
+.protect-drivel-card {
+  width: 356px;
+  height: 222px;
+  position: relative;
+
+  // .protect-drivel-card__head
+  &__head {
+    margin: 20px;
+  }
+
+  // .protect-drivel-card__img
+  &__img {
+    position: absolute;
+    bottom:0;
+    right: 0;
+    opacity: .7;
+     float: right;
+
+      picture,
+        source,
+        img{
+
+      }
+  }
+}
+

@@ -1,0 +1,92 @@
+<section class="section-main section second-container  stay-application">
+    <form class="section-main__left text-area  text_300 section section_blur-b stay-application__form round-20">
+
+        <div class="section__header text_700   stay-application__header">
+            <p class="text-area__over-text   text_upper">
+                Lorem ipsum dolor sit
+            </p>
+            <h2 class="text-area__head  ">
+                Lorem ipsum
+            </h2>
+        </div>
+
+        <div class="section__body  stay-application__form-body">
+            <div class="stay-application__row">
+                <label class="stay-application__field">
+                    <input name="name"
+                           type="text"
+                           class="stay-application__input"
+                           placeholder="lorem / lorem">
+                </label>
+                <label class="stay-application__field">
+                    <select  class="stay-application__select" >
+                        <option value="">Lorem ipsum</option>
+                        <option value="">Lorem ipsum</option>
+                        <option value="">Lorem ipsum</option>
+                    </select>
+                </label>
+            </div>
+            <div class="stay-application__row">
+                <label class="stay-application__field">
+                    <input type="text"
+                           placeholder="lorem"
+                           class="stay-application__input">
+                </label>
+                <label class="stay-application__field">
+                    <input type="text"
+                           placeholder="lorem"
+                           class="stay-application__input">
+                </label>
+                <label class="stay-application__field">
+                    <input type="text"
+                           placeholder="lorem"
+                           class="stay-application__input"
+                           onfocus="(this.type='date')"
+                           onblur="(this.type='text')"
+                    >
+                </label>
+            </div>
+            <div class="stay-application__row">
+                <label class="stay-application__field">
+                    <input type="tel" placeholder="tel" class="stay-application__input">
+                </label>
+            </div>
+            <div class="stay-application__row">
+                <label class="stay-application__field">
+                    <input type="text" placeholder="lorem" class="stay-application__input">
+                </label>
+            </div>
+            <div class="stay-application__row">
+                <p class="text_300 text-area__paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem debitis id illum inventore non porro?
+                </p>
+                <button type="submit" class="btn btn_main btn_black-background round-32">
+                    <p class="btn__text text_300">Отправить</p>
+                    <img class="btn__icon" src='@@webRoot/static/img/icons/arrow-right.svg' alt="">
+                </button>
+            </div>
+
+        </div>
+    </form>
+    <div class="stay-application__img round-20">
+        <img src="@@webRoot/static/img/against-form.png" alt="Lorem ipsum dolor sit amet">
+    </div>
+    @@if(mainPage===false){
+    <article class="over-page round-20 ">
+        <div class="over-page__left text-area">
+            <h2 class="text-area__head text_700">
+               Lorem ipsum
+            </h2>
+            <p class="text-area__paragraph text_300">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, facere?
+            </p>
+        </div>
+        <div class="over-page__right">
+            @@include('buttons/button-black.html',{
+            svg:'static/img/icons/arrow-right.svg',
+            text:'lorem'})
+        </div>
+
+    </article>
+    }
+</section>

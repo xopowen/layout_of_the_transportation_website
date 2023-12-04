@@ -1,0 +1,21 @@
+
+.album {
+  // .album__body
+  &__body {
+
+
+  }
+  &__row{
+    display: flex;
+  }
+  // .album__img
+  &__img {
+
+      picture,
+        source,
+        img{
+        max-width: 100%;
+      }
+
+  }
+}

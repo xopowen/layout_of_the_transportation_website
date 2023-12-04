@@ -1,0 +1,22 @@
+.our-tech {
+  // .our-tech__header
+  &__header {
+    max-width: 551px;
+    gap: 31px;
+  }
+  &__card-head{
+    margin-bottom: 15px;
+  }
+  // .our-tech__body
+  &__body {
+    row-gap: 50px;
+  }
+
+  // .our-tech__ul
+  &__ul {
+   li{
+     list-style: '·';
+     padding-left: 4px;
+   }
+  }
+}

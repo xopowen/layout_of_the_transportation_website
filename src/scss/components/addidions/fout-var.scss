@@ -1,0 +1,23 @@
+
+$main_font-family: sans-serif;
+$main_font_size:16px;
+
+@mixin main_text_weight400{
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+}
+//шаблон для текста
+%main_text_weight400{
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+}
+%main_font{
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: normal;
+}
+:root{
+  --font-size-main: 16px ;
+}

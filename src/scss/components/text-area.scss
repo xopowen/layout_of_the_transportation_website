@@ -1,0 +1,40 @@
+.text-area {
+  display: flex;
+  flex-direction: column;
+  &_center{
+    text-align: center;
+  }
+
+
+
+  // .text-area__over-text
+  &__over-text {
+    font-size: 12px;
+    font-style: normal;
+    line-height: 12px;
+  }
+
+  // .text-area__head
+  &__head {
+    font-size: clamp(24px,3.3vw ,48px);
+    font-style: normal;
+    line-height:  clamp(24px,3.3vw ,48px);
+  }
+  &__head_card{
+    font-size:  clamp(12px,1.6vw ,24px);
+    font-style: normal;
+    line-height: clamp(12px,1.6vw ,24px);
+  }
+
+  // .text-area__paragraph
+  &__paragraph {
+    font-size: 14px;
+    font-style: normal;
+    line-height: 16px;
+    &_big{
+      font-size: 18px;
+      font-style: normal;
+      line-height: 20px;
+    }
+  }
+}

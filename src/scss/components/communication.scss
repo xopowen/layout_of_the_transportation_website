@@ -1,0 +1,26 @@
+
+.communication {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: min-content 1fr;
+  column-gap: 8px;
+  text-align: left;
+  // .communication__icon
+  &__icon {
+    grid-row: span 2;
+  }
+
+  // .communication__over-text
+  &__over-text {
+    font-size: 12px;
+    font-style: normal;
+    line-height: normal;
+  }
+
+  // .communication__under-text
+  &__under-text {
+    font-size: 12px;
+    font-style: normal;
+    line-height: 10px;
+  }
+}

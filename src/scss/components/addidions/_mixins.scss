@@ -1,0 +1,6 @@
+@import "fout-var";
+@mixin get_font-size($scaleMax,$scaleAver,$scaleMin){
+  font-size: clamp(var(--font-size-main) * $scaleMax,
+  var(--font-size-main)*$scaleAver,
+  var(--font-size-main)*$scaleMin);
+}

@@ -1,0 +1,27 @@
+.over-page {
+  position: absolute;
+  margin-block: auto;
+  margin-inline:auto ;
+  z-index: 50;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: var(--background-color-main);
+  max-width: 661px;
+  height: clamp(270px,24.3vw,354px);
+  width: 100%;
+  display: flex;
+  padding: clamp(15px,3vw,40px);
+  // .over-page__left
+  &__left {
+    gap: 32px;
+  }
+
+  // .over-page__right
+  &__right {
+    display: flex;
+    button{
+      align-self: end;
+    }
+  }
+}

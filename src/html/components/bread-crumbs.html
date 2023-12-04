@@ -1,0 +1,16 @@
+<section class="section second-container text-area brad-crumbs">
+    <div class="section__header">
+        <p class="text-area__over-text text_300 brad-crumbs__links">
+            <a href="/">Главная</a>
+            @@if ( page1 !== '' && page2 === '') {
+                <span class="text_700"> /<a href="#"> @@page1</a></span>
+            }
+            @@if ( page1 !== '' && page2 !== '') {
+            <span> /<a href="#"> @@page1</a></span>
+            }
+            @@if ( page2 !== '') {
+            <span class="text_700"> /<a href="#"> @@page2</a></span>
+            }
+        </p>
+    </div>
+</section>

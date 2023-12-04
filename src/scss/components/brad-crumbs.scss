@@ -1,0 +1,11 @@
+
+.brad-crumbs {
+  padding-top: 32px;
+  // .brad-crumbs__links
+  &__links {
+    color: #58595B;
+    span:last-child{
+      font-weight: 700;
+    }
+  }
+}

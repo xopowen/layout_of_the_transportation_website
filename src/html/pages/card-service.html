@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('../components/head.html')
+<body>
+@@include('../components/header.html',{mainPage:false})
+<main>
+    @@include('../components/bread-crumbs.html',{page1:'услуги',page2:'Перевозка спецтехники'})
+    <section class="section section_first-sec  second-container">
+
+        <div class="section__body section__body_two-с">
+            <section class="block-text text-area">
+                <article class="block-text__text-area ">
+                    <h2 class="block-text__head block-text__head_mini text-area__head text_700">
+                        Lorem ipsum.
+                    </h2>
+                    <p  class="text-area__paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet asperiores corporis eum fugit molestias mollitia non possimus sit voluptatem! Facere, id illum obcaecati officiis perferendis sequi vel! Quam, totam?</p>
+                    <a href="">
+                        @@include('../components/buttons/button-black.html',{
+                        svg:'static/img/icons/arrow-right.svg',
+                        text:'WhatsApp'})
+                    </a>
+
+
+                </article>
+
+            </section>
+            <section class="section__img">
+                <img src="@@webRoot/static/img/fon-3.png" alt='img'>
+
+            </section>
+        </div>
+
+    </section>
+
+
+    @@include('../components/protect-drivel.html')
+
+    @@include('../components/note.html')
+    @@include('../components/album.html')
+    <section class='section second-container note'>
+        <div class="text-area text-area_center text_700">
+            <h2 class="text-area__head text_700">
+                Lorem ipsum dolor sit.
+            </h2>
+        </div>
+        <div class="section__body note__body note__body_big">
+            <article class="note__card note-card text-area">
+
+                <button class="btn btn_arrow  btn_black-background round-circle note-card__sign">
+                    !
+                </button>
+                <p class="text_300 text-area__paragraph">
+                    Lorem ipsum dolor sit
+                </p>
+            </article>
+            <article class="note__card note-card text-area">
+
+                <button class="btn btn_arrow  btn_black-background round-circle note-card__sign">
+                    !
+                </button>
+                <p class="text_300 text-area__paragraph">
+                    Lorem ipsum dolor sit amet, consectetur
+                </p>
+            </article>
+            <article class="note__card note-card text-area">
+
+                <button class="btn btn_arrow  btn_black-background round-circle note-card__sign">
+                    !
+                </button>
+                <p class="text_300 text-area__paragraph">
+                    Lorem ipsum dolor
+                </p>
+            </article>
+            <article class="note__card note-card text-area">
+                <button class="btn btn_arrow  btn_black-background round-circle note-card__sign">
+                    !
+                </button>
+                <p class="text_300 text-area__paragraph">
+                    Lorem ipsum dolor
+                </p>
+            </article>
+        </div>
+    </section>
+    <section class="second-container">
+        @@include('../components/order-serves.html')
+    </section>
+    @@include('../components/where-we-work.html')
+    @@include('../components/stay-application.html',{mainPage:false})
+
+
+
+</main>
+@@include('../components/footer.html')
+</body>
+</html>
+<!DOCTYPE html>

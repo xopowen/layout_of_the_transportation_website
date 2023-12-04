@@ -1,0 +1,41 @@
+.card-container{
+display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.card-about-us {
+  position: relative;
+  min-height: 155px;
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px;
+  color: var(--color-second);
+
+
+
+  &:nth-child(n){
+    background: rgb(137,13,5);
+    background: linear-gradient(148deg, rgba(137,13,5,1) 12%, rgba(246,171,62,1) 50%, rgba(137,13,5,1) 77%);
+  }
+  &:nth-child(2n){
+    background: rgb(137,13,5);
+    background: linear-gradient(148deg,rgba(246,171,62,1)  12%, rgba(137,13,5,1) 50%,rgba(246,171,62,1) 77%);
+
+  }
+  // .card-about-us__head
+  &__head {
+    padding-right:  5%;
+    padding-bottom: 10px;
+  }
+
+  // .card-about-us__paragraph
+  &__paragraph {
+    padding-right:   32px+21px ;
+  }
+  button{
+    position: absolute;
+    right: 21px;
+    bottom: 21px;
+  }
+}

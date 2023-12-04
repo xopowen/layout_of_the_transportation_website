@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('../components/head.html')
+<body>
+@@include('../components/header.html',{mainPage:false})
+<main>
+    @@include('../components/bread-crumbs.html',{page1:'контакты',page2:''})
+
+    <section class="section second-container contact">
+        <div class="section__body section__body_two-с">
+
+            <h2 class="text-area__head text_700 ">
+                lorem <br/>
+                lorem
+            </h2>
+
+            <div class="contact__info-list">
+                <address class="text-area contact__address">
+                    <div class="text-area__over-text contact__img">
+                        <img src='@@webRoot/static/img/icons/solar_phone-bold.svg'>
+                    </div>
+                    <p class="text-area__head text_700">
+                        8 800 000 00 00
+                    </p>
+                    <p class="text-area__paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, maiores?
+                    </p>
+                </address>
+                <address class="text-area contact__address">
+                    <div class="text-area__over-text contact__img">
+                        <img src='@@webRoot/static/img/icons/ic_round-email.svg'>
+                    </div>
+                    <p class="text-area__head text_700">
+                        8 000 000 00 00
+                    </p>
+                    <p class="text-area__paragraph">
+                        Lorem ipsum dolor sit amet.
+                    </p>
+                </address>
+                <address class="text-area contact__address">
+                    <div class="text-area__over-text contact__img">
+                        <img src='@@webRoot/static/img/icons/ic_round-email2.svg'>
+                    </div>
+                    <p class="text-area__head text_700">
+                        Lorem ipsum.
+                    </p>
+                    <p class="text-area__paragraph">
+                        Lorem ipsum dolor sit amet.
+                    </p>
+                </address>
+            </div>
+        </div>
+    </section>
+    <section class="section second-container contact">
+        <div class="section__body section__body_two-с">
+
+            <h2 class="text-area__head text_700 ">
+                lorem <br>
+                lorem
+            </h2>
+
+            <div class="contact__info-list">
+                <address class="text-area contact__address">
+                    <div class="text-area__over-text contact__img">
+                        <img src='@@webRoot/static/img/icons/map-marker.svg'>
+                    </div>
+                    <p class="text-area__head text_700">
+                        lorem
+                    </p>
+                    <p class="text-area__paragraph">
+                        Lorem ipsum dolor sit amet.
+                    </p>
+                </address>
+
+            </div>
+        </div>
+        <div id="map" class="section__body map-sec__body" >
+
+        </div>
+    </section>
+    <section class="section second-container contact">
+        <div class="section__body section__body_two-с">
+
+            <h2 class="text-area__head text_700 ">
+                lorem <br/>
+                lorem
+            </h2>
+
+            <div class="contact__info-list">
+                <address class="text-area contact__address">
+                    <p class="text-area__head text_700">
+                        lorem
+                    </p>
+                    <p class="text-area__paragraph">
+                        <b>ИНН</b> 00000000 <br/>
+                        <b>КПП</b> 00000000 <br/>
+                        <b>ОГРН</b> 00000000 <br/>
+                    </p>
+                    <p class="text-area__paragraph">
+                        <b> Lorem ipsum.</b> <br/>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing.<br/>
+                        Lorem ipsum dolor.<br/>
+                    </p>
+                </address>
+
+            </div>
+        </div>
+
+    </section>
+    @@include('../components/stay-application.html',{mainPage:true})
+
+
+
+</main>
+@@include('../components/footer.html')
+</body>
+</html>
+<!DOCTYPE html>

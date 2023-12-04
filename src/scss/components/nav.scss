@@ -1,0 +1,49 @@
+@import "addidions/screen-mixins";
+.nav {
+  position: relative;
+  color:var(--font-color-main);
+  // .nav__left-list
+  &__right-list,
+  &__left-list {
+    display: flex;
+    column-gap: clamp(15px,3.4vw,50px);
+    row-gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__left-list{
+    @include media-phones480max{
+      position: absolute;
+      bottom: -20px;
+      &_active{
+        display: flex;
+        width: min-content;
+      }
+    }
+  }
+  &__right-list{
+    @include media-phones480max{
+     justify-content: end;
+    }
+  }
+  // .nav__link
+  &__link {
+    font-size: 14px;
+    font-style: normal;
+    line-height: normal;
+  }
+
+  // .nav__main-link-icon
+  &__main-link-icon {
+    align-self: center;
+    position: relative;
+    left: 9px;
+  }
+
+  // .nav__right-list
+
+
+  // .nav__btn
+  &__btn {
+  }
+}

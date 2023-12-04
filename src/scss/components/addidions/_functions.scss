@@ -1,0 +1,4 @@
+
+@function getPercentW($n) {
+  @return #{($n / 1440 * 100)}+ vw;
+}

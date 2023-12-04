@@ -1,0 +1,103 @@
+
+@import "fonts.css";
+@import "components/addidions/variable";
+@import "components/addidions/color-var";
+@import "components/addidions/mixins";
+@import "components/addidions/style_zeroing";
+@import "components/container";
+@import "components/header";
+@import "components/nav";
+@import "components/text";
+@import "components/communication";
+@import "components/btn";
+@import "components/round";
+@import "components/section";
+@import "components/text-area";
+@import "components/card-about-us";
+@import "components/block-text";
+@import "components/services-sec";
+@import "components/services-card";
+@import "components/order-serves";
+@import "components/where-we-work";
+@import "components/us-trust";
+@import "components/map-sec";
+@import "components/stay-application";
+@import "components/footer";
+@import "components/brad-crumbs";
+@import "components/about-company-sec";
+@import "components/main-number-our-company";
+@import "components/who-work-with-us";
+@import "components/our-tech";
+@import "components/protect-drivel";
+@import "components/note";
+@import "components/album";
+@import "components/over-page";
+@import "components/contact";
+.second-container{
+  padding-inline: clamp(5px,7.9vw,115px);
+  @include media-portrait767max{
+    padding-inline:  50px;
+  }
+  @include media-phones480max{
+    padding-inline:  15px;
+  }
+  @include media-phones375max{
+    padding-inline:  5px;
+  }
+}
+
+main > section+section:not(:first-child) {
+  margin-top: 100px;
+  @include media-portrait767max{
+    margin-top: 70px;
+  }
+  @include media-phones480max{
+    margin-top: 30px;
+  }
+}
+main > section+section:last-child {
+  margin-bottom: 100px;
+}
+.container-img{
+
+  picture,
+  source,
+  img{
+    width: 100%;
+    max-width: 100% ;
+  }
+}
+
+body{
+  max-width: $desktop_screen_width;
+  margin: auto;
+  overflow-x: hidden;
+  position: relative;
+  width:100%;
+  padding: 0px clamp(15px,5vw,50px);
+  height: 100%;
+  background-color: var(--background-color-main);
+}
+main{
+  min-height: 100vh;
+
+}
+
+@for $i from 1 through 3 {
+ //#{$i}
+ //$i
+  h#{$i}{
+    font-family: 'Museo Sans Cyrl',sans-serif;
+  }
+}
+
+p,a{
+  font-family:'Museo Sans Cyrl',sans-serif;
+}
+a{
+  color: initial;
+}
+a:visited{
+  color: initial;
+
+}

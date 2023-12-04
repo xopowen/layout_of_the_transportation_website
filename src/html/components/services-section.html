@@ -1,0 +1,109 @@
+<section class="section second-container services-sec @@class">
+    <div class="section__header text-area text-area_center services-sec__header">
+        @@if(mainPage === true){
+        <p class="text-area__over-text text_700 text_upper">
+            lorem
+        </p>
+        <h2 class="text-area__head text_700">
+           Lorem ipsum dolor sit amet.
+        </h2>
+        }
+        @@if(mainPage === false){
+        <h2 class="text-area__head text_700">
+            Lorem ipsum. <br/>
+            Lorem ipsum dolor sit.
+        </h2>
+        }
+    </div>
+
+    <div class="section__body services-sec__body">
+        <article class="services-sec__card services-card">
+            <div class="services-card__img">
+                <img src="@@webRoot/static/img/PHOTO-2023-10-19-22-03-18%201.png" alt="img">
+            </div>
+            <div class="services-card__body round-20 ">
+                <h3 class="services-card__head text-area__head text-area__head_card ">
+                    lorem <br>
+                    Lorem ipsum.
+                </h3>
+                <a href="#">
+                    @@include('buttons/button-arrow.html')
+                </a>
+            </div>
+        </article>
+        <article class="services-sec__card services-card">
+            <div class="services-card__img">
+                <img src="@@webRoot/static/img/img_XBJj0SEAmq1qQInLnQi3%2015.png" alt="img">
+            </div>
+            <div class="services-card__body round-20">
+                <h3 class="services-card__head text-area__head text-area__head_card">
+                    Lorem ipsum dolor.
+                </h3>
+                <a href="#">
+                    @@include('buttons/button-arrow.html')
+                </a>
+            </div>
+        </article>
+        <article class="services-sec__card services-card">
+            <div class="services-card__img">
+                <img src="@@webRoot/static/img/img_XBJj0SEAmq1qQInLnQi3%208.png" alt="img">
+            </div>
+            <div class="services-card__body round-20">
+                <h3 class="services-card__head text-area__head text-area__head_card">
+                    lorem <br>
+                    Lorem ipsum.
+                </h3>
+                <a href="#">
+                    @@include('buttons/button-arrow.html')
+                </a>
+            </div>
+        </article>
+        <article class="services-sec__card services-card">
+            <div class="services-card__img">
+                <img src="@@webRoot/static/img/img_XBJj0SEAmq1qQInLnQi3%209.png" alt="img">
+            </div>
+            <div class="services-card__body round-20">
+                <h3 class="services-card__head text-area__head text-area__head_card">
+                    lorem <br>
+                    Lorem ipsum.
+                </h3>
+                <a href="#">
+                    @@include('buttons/button-arrow.html')
+                </a>
+            </div>
+        </article>
+        <article class="services-sec__card services-card">
+            <div class="services-card__img">
+                <img src="@@webRoot/static/img/img_XBJj0SEAmq1qQInLnQi3%2010.png" alt="img">
+            </div>
+            <div class="services-card__body round-20">
+                <h3 class="services-card__head text-area__head text-area__head_card">
+                    lorem  <br>
+                    Lorem ipsum.
+                </h3>
+                <a href="#">
+                    @@include('buttons/button-arrow.html')
+                </a>
+            </div>
+        </article>
+
+        @@if(mainPage === false){
+        <article class="services-sec__card services-sec__card_big services-card">
+            <div class="services-card__img">
+                <img src="@@webRoot/static/img/fon-about-company.png" alt="img">
+            </div>
+            <div class="services-card__body round-20">
+                <h3 class="services-card__head text-area__head text-area__head_card">
+                    Lorem ipsum <br>
+                    Lorem ipsum
+                </h3>
+                <a href="#">
+                    @@include('buttons/button-arrow.html')
+                </a>
+            </div>
+        </article>
+        }
+
+    </div>
+    @@include('../components/order-serves.html')
+</section>

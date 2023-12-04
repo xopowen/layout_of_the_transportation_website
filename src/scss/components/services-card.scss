@@ -1,0 +1,27 @@
+ .services-card {
+  // .services-card__img
+  &__img {
+      picture,
+        source,
+        img{
+        max-width: 100%;
+        width: 100%;
+      }
+  }
+
+  // .services-card__body
+  &__body {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--color-F9F9F9,#F9F9F9);
+    min-height: 92px;
+    align-items: end;
+  }
+
+  // .services-card__head
+  &__head {
+
+  }
+}

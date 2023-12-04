@@ -1,0 +1,18 @@
+
+:root{
+  --background-color-main:white;
+  --font-color-main:black;
+  --color-main:black;
+  --color-second:#FFF;
+  --color-active_link:blue;
+  --outline-color:#728DABFF;
+  --color-gray:#F9F9F9;
+  --color-F9F9F9:#F9F9F9;
+
+  --color-213887:#213887 ;
+}
+:root[theme='dark'] {
+  --background-color-main:#6B6B6C;
+  --font-color-main:black;
+  --color-active_link: rgba(56, 110, 232, 0.2);
+}

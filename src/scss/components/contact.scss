@@ -1,0 +1,35 @@
+@import "addidions/screen-mixins";
+.contact {
+ @include media-phones480max{
+   text-align: center;
+ }
+  &_with-bord{
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+  }
+
+
+  // .contact__address
+  &__address {
+    gap: 32px;
+    @include media-phones480max{
+      gap: 16px;
+    }
+  }
+  &__info-list{
+    display: flex;
+    flex-direction: column;
+    gap: clamp(15px,3.4vw,50px);
+  }
+  // .contact__img
+  &__img {
+    width: 47px;
+    height: 47px;
+      picture,
+        source,
+        img{
+        max-width: 100%;
+        width: 100%;
+      }
+  }
+}

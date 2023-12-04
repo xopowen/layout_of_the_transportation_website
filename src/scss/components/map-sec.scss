@@ -1,0 +1,17 @@
+
+.map-sec {
+  // .map-sec__header
+  &__header {
+    padding-top: 5px;
+    h2{
+      margin-top: 25px;
+      margin-bottom: 32px;
+    }
+  }
+
+  // .map-sec__body
+  &__body {
+    width: 100%;
+    height: clamp(150px,50vw,478px);
+  }
+}

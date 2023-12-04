@@ -1,0 +1,40 @@
+main > section + .about-company-sec:not(:first-child){
+  margin-top: 92px ;
+  @include media-phones480max{
+    margin-top: 30px;
+  }
+}
+.about-company-sec {
+  // .about-company-sec__header
+
+
+  @include media-phones480max{
+    margin-top: inherit;
+  }
+
+  &__header {
+    // .about-company-sec__header__img
+    flex-direction: row;
+    gap: 17%;
+    @include media-portrait767max{
+      flex-direction: column;
+    }
+    h1,h2{
+      max-width: 285px;
+    }
+    p{
+      align-self: center;
+      max-width: 400px;
+    }
+
+  }
+  &__img {
+    picture,
+    source,
+    img{
+      max-width: 100%;
+    }
+  }
+
+}
+

@@ -1,0 +1,77 @@
+.stay-application {
+  position: relative;
+  grid-template-columns: 59.4% auto;
+  @include media-desktop768min979max{
+    grid-template-columns:  auto;
+  }
+  &__header{
+    align-self: flex-start;
+    @extend .where-we-work__header;
+  }
+  &__form-body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: clamp(25px,3.8vw,46px)
+
+  }
+  // .stay-application__form
+  &__form {
+    padding: 55px 58px;
+    gap: 0;
+    justify-content: space-between;
+    select,
+    input{
+      background: none;
+      border-bottom: 1px solid black;
+      width: 100%;
+      padding-bottom: 10px;
+    }
+  }
+
+  // .stay-application__row
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: clamp(25px,3.8vw,50px);
+    &:last-child{
+      flex-wrap: nowrap;
+      @include media-desktop768min979max{
+        flex-wrap: wrap;
+      }
+      @include media-portrait767max{
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  // .stay-application__field
+  &__field {
+    flex-grow: 1;
+  }
+
+  // .stay-application__input
+  &__input {
+  }
+
+  // .stay-application__select
+  &__select {
+  }
+
+  // .stay-application__img
+  &__img {
+      picture,
+        source,
+        img{
+        max-width: 100%;
+      }
+
+    @include media-desktop768min979max{
+      display: none;
+    }
+    @include media-portrait767max{
+      display: none;
+    }
+  }
+}
