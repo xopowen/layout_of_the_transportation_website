@@ -1,9 +1,21 @@
-
+//заружает скрыпты карты и init карту после загрузки страницы если на странице есть id = "map"
 if(document.querySelector('#map')){
+    setTimeout(function(){
+        var elem = document.createElement('script');
+        elem.type = 'text/javascript';
+        elem.src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=aae3f3e4-374f-420f-a948-677e1a58f577";
+        elem.type="text/javascript";
+        elem.onload = ev => mapInit()
+        document.body.appendChild(elem);
+    }, 2000);
+}
+
+function mapInit(){
+
 
     var myMap;
 
-// Дождёмся загрузки API и готовности DOM.
+    // Дождёмся загрузки API и готовности DOM.
     ymaps.ready(init);
 
     function init () {
@@ -46,6 +58,8 @@ if(document.querySelector('#map')){
         myMap.geoObjects
             .add(myPlacemark)
     }
+
 }
+
 
 
