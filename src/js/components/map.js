@@ -1,6 +1,6 @@
 //заружает скрыпты карты и init карту после загрузки страницы если на странице есть id = "map"
 if(document.querySelector('#map')){
-    setTimeout(function(){
+    setTimeout(async function(){
         var elem = document.createElement('script');
         elem.type = 'text/javascript';
         elem.src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=aae3f3e4-374f-420f-a948-677e1a58f577";
@@ -10,7 +10,7 @@ if(document.querySelector('#map')){
     }, 2000);
 }
 
-function mapInit(){
+async function mapInit(){
 
 
     var myMap;
