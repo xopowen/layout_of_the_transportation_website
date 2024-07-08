@@ -33,6 +33,8 @@ main > section + .about-company-sec:not(:first-child){
     source,
     img{
       max-width: 100%;
+      height: auto;
+      object-fit: contain;
     }
   }
 

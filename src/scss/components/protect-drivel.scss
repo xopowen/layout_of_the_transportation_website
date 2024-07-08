@@ -37,7 +37,8 @@
       picture,
         source,
         img{
-
+        width: 100%;
+        object-fit: contain;
       }
   }
 }

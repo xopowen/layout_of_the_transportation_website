@@ -44,8 +44,7 @@
   }
   // .section_blur-b
   &_blur-b {
-    background: url("../img/main-background.png");
-    background-repeat: no-repeat;
+    background: url("../img/main-background.png") no-repeat;
   }
   &_gray{
 
@@ -56,6 +55,7 @@
   }
   // .section__body
   &__body {
+    justify-content: center;
     margin-top: 50px;
     @include media-portrait767max{
       margin-top: 30px;
