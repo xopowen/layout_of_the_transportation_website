@@ -7,7 +7,11 @@
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
   }
-
+ &__head{
+   position: sticky;
+   top: 0;
+   height: min-content;
+ }
 
   // .contact__address
   &__address {

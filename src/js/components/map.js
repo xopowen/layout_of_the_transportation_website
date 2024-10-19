@@ -43,9 +43,6 @@ if(document.querySelector('#map')){
 
 }
 
-
-
-
 async function mapInit(){
 
 
