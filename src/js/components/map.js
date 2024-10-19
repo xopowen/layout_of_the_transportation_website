@@ -26,7 +26,7 @@ if(document.querySelector('#map')){
                 if(entrie.isIntersecting){
                     if(!entrie.target.dataset.scriptStart){
                         entrie.target.dataset.scriptStart = true+''
-                        loadMapScript()
+                        setTimeout(()=>loadMapScript(),0)
                     }
 
                 }
@@ -37,10 +37,10 @@ if(document.querySelector('#map')){
         obser.observe(document.querySelector('#map'))
 
     }else{
-
+        setTimeout( loadMapScript, 2000);
     }
 
-    setTimeout( loadMapScript, 2000);
+
 }
 
 
