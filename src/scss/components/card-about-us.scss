@@ -8,7 +8,7 @@ display: flex;
   min-height: 155px;
   display: flex;
   flex-direction: column;
-
+  align-items: end;
   padding: 20px;
   color: var(--color-second);
 
@@ -33,9 +33,10 @@ display: flex;
   &__paragraph {
     padding-right:   32px+21px ;
   }
-  button{
+  .btn_arrow{
     position: absolute;
     right: 21px;
     bottom: 21px;
+
   }
 }
